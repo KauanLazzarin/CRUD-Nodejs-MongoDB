@@ -22,11 +22,45 @@ async function showProducts (req, res) {
 
         return res.render('products.html', {manipulatedData});
     } catch (error) {
-        console.error(error)
+        console.error(error);
+    }
+};
+
+async function deleteProducts (req, res) {
+    try {
+        const {productId} = req.body;
+        
+        await Product.findByIdAndDelete(productId);
+
+        return res.redirect('/products');
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+async function editProduct (req, res) {
+    try {
+        const {productId, name, mark, price} = req.body;
+
+        const actualData = await Product.findById(productId);
+     
+        const editedData = {
+            name: name || actualData.name,
+            mark: mark || actualData.mark,
+            price: price || actualData.price
+        };
+
+        await Product.findByIdAndUpdate(productId, editedData);
+
+        return res.redirect('/products');
+    } catch (error) {
+        
     }
 };
 
 module.exports = {
     createProduct,
-    showProducts
+    showProducts,
+    deleteProducts,
+    editProduct
 };

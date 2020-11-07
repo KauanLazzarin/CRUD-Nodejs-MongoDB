@@ -20,7 +20,7 @@
     border-collapse: separate;
     border-spacing: 8px;
     width: 90%;
-    background-color: rgb(129, 126, 126);
+    background-color: rgba(248, 244, 244, 0.253);
     padding: 25px;
 }
 
@@ -30,7 +30,7 @@
     font-size: 22px;
     font-family: 'Ubuntu';
     font-weight: 400;
-    background-color: rgb(172, 172, 177);
+    background-color: rgb(128, 128, 233);
 }
 
 #table-container table td {

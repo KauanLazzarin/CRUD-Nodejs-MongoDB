@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./../public/styles/index.css">
+        <link rel="stylesheet" href="./../public/styles/delete.css">
         <link rel="stylesheet" href="./../public/styles/main.css">
         <title>Cadastro de produtos</title>
     </head>
@@ -21,28 +21,17 @@
             </nav>
         </div>
 
-        <div id="form-container">
-            <h2>Insira aqui as informações do produto!</h2>
-            <form action="/register" method="POST">
+        <div id="delete-form">
+            <form action="/delete-product" method="POST">
                 <fieldset>
-                    <label for="name">Nome do produto</label>
-                    <input type="text" name="name" id="name">
-                </fieldset>
-
-                <fieldset>
-                    <label for="name">Marca do produto</label>
-                    <input type="text" name="mark" id="mark">
-                </fieldset>
-
-                <fieldset>
-                    <label for="name">Preço (R$) </label>
-                    <input type="number" name="price" id="price">
+                    <label for="productId">Insira aqui o ID do produto que deseja deletar</label>
+                    <input type="text" name="productId" id="productId">
                 </fieldset>
                 <fieldset>
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit">Deletar</button>
                 </fieldset>
             </form>
         </div>
-        
+
     </body>
 </html>

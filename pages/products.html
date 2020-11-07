@@ -15,7 +15,8 @@
                 <ul>
                     <li><a href="/">Cadastrar produtos</a></li>
                     <li><a href="/products">Mostrar produtos</a></li>
-                    <li><a href="#">Deletar produtos</a></li>
+                    <li><a href="/delete">Deletar produtos</a></li>
+                    <li><a href="/edit">Editar produto</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +38,7 @@
                 <td>{{loop.index}}</td>
                 <td>{{product.names}}</td>
                 <td>{{product.marks}}</td>
-                <td>{{product.prices}}</td>
+                <td>R$ {{product.prices}}</td>
                 <td>{{product.productId}}</td>
             </tr>
             {%endfor%}

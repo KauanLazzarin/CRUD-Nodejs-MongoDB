@@ -10,7 +10,6 @@ async function getDataAtribbutes (data) {
         })
     });
     
-    console.log(productAtrribs);
     return productAtrribs;
 };
 
