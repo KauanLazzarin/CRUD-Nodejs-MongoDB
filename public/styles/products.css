@@ -1,0 +1,43 @@
+#table-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15vh;
+    background-color: #c4f5ed4d;
+    padding: 0 0 10vh 0;
+}
+
+#table-container h1 {
+    font-family: 'Ubuntu';
+    font-size: 48px;
+    font-weight: 500;
+    color: rgb(43, 43, 43);
+}
+
+#table-container table {
+    border-collapse: separate;
+    border-spacing: 8px;
+    width: 90%;
+    background-color: rgb(129, 126, 126);
+    padding: 25px;
+}
+
+#table-container table th {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    font-size: 22px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    background-color: rgb(172, 172, 177);
+}
+
+#table-container table td {
+    color: rgb(32, 28, 28);
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid rgb(5, 5, 5);
+    font-family: 'Quicksand',cursive;
+}

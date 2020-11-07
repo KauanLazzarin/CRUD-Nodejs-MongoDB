@@ -1,0 +1,40 @@
+body {
+    background: rgb(91,90,90);
+    background: radial-gradient(circle, rgb(52, 171, 192) 0%, rgba(103,127,157,1) 39%, rgba(148,187,233,1) 100%);
+}
+
+#menu, #form-container {
+    width: 100%;
+    background-color: #c4f5ed4d;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#menu ul li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#menu h1 {
+    font-family: 'Ubuntu';
+    font-size: 48px;
+    color: rgb(32, 32, 32);
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(53, 53, 53);
+    font-family: 'Quicksand',cursive;
+    padding: 15px;
+    transition: 200ms;
+    border-radius: 8px;
+}
+
+#menu ul li a:hover  {
+    background-color: rgb(43, 42, 42);
+    color: whitesmoke;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./../public/styles/products.css">
+        <link rel="stylesheet" href="./../public/styles/main.css">
+        <title>Cadastro de produtos</title>
+    </head>
+    <body>
+        <div id="menu">
+            <h1>Cadastro de produtos</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Cadastrar produtos</a></li>
+                    <li><a href="/products">Mostrar produtos</a></li>
+                    <li><a href="#">Deletar produtos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="table-container">
+          <h1>Listagem de todos os produtos</h1>
+          
+          <table>
+            <tr>
+                <th>Index</th>
+                <th>Produto</th>
+                <th>Marca</th>
+                <th>Preço</th>
+                <th>Id do produto (Para consultas ou remoção) </th>
+            </tr>
+            
+            {% for product in manipulatedData %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{product.names}}</td>
+                <td>{{product.marks}}</td>
+                <td>{{product.prices}}</td>
+                <td>{{product.productId}}</td>
+            </tr>
+            {%endfor%}
+            
+            
+          </table>
+
+        </div>
+    </body>
+</html>
