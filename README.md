@@ -4,9 +4,19 @@
 
 Hello friends! This project is a simple CRUD with NodeJS and MongoDB 
 
-<img src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.png" width="auto" height="120px" /> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" width="auto" height="120px" />
+## Technologies
+* > HTML5
+* > CSS3
+* > JavaScript
+* > NodeJS
+* > ExpressJS
+* > MongoDB (Mongoose)
+* > Nunjucks (To insert data in HTML)
+* > MVC (Architeture)
 
+I also used some dev dependencies (Like Nodemon and things like it) , they're not so relevant, I kept on the Package.json because it will help you to test the application 
+
+>> My english is also not so good, sorry for any errors :')
 ### How to use:
 
 * First you clone the repo with: 
