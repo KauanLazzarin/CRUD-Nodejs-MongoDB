@@ -1,10 +1,11 @@
-# CRUD-Nodejs-MongoDB
+# <h1 align="center">CRUD-Nodejs-MongoDB</h1>
 
 ## About <br>
 
 Hello friends! This project is a simple CRUD with NodeJS and MongoDB 
 
-## Technologies
+<h2 align="center">Technologies</h2>
+
 * > HTML5
 * > CSS3
 * > JavaScript
